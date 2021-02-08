@@ -1,0 +1,122 @@
+.events {
+    background-color: #eee;
+    padding: 50px 50px 20px 50px;
+
+    .alert-danger {
+        display: none;
+    }
+
+    .search-body {
+        .search-field {
+            border-radius: 0;
+        }
+
+        .select2 {
+            width: 100% !important;
+        }
+
+        .buttons {
+            margin-left: 0;
+
+            button {
+                font-size: 1.6rem;
+                padding: 5px 20px;
+                border-radius: 0;
+                background: none;
+            }
+
+            button:focus {
+                outline: none;
+            }
+
+            .search-btn {
+                border: 1px solid #337ab7;
+                color: #337ab7;
+            }
+
+            .clear-btn {
+                border: 1px solid #ff0000;
+                color: #ff0000;
+                margin-left: 5px;
+            }
+
+            .search-btn:hover {
+                color: #fff;
+                background-color: #337ab7;
+            }
+
+            .clear-btn:hover {
+                color: #fff;
+                background-color: #ff0000;
+            }
+        }
+    }
+
+    .select2-container--default {
+        .select2-selection--single {
+            border-radius: 0;
+            height: 33px;
+            padding-top: 2px;
+        }
+    }
+
+    .hidden-items {
+        margin-bottom: 10px;
+        margin-top: 20px;
+
+        .chip {
+            display: inline-block;
+            padding: 0 25px;
+            height: 50px;
+            font-size: 16px;
+            line-height: 50px;
+            border-radius: 25px;
+            background-color: #f1f1f1;
+            margin-right: 5px;
+
+            .closebtn {
+                color: green;
+                padding-left: 5px;
+                font-size: 1.2rem;
+                margin-left: 3px;
+            }
+
+            .closebtn:hover {
+                font-weight: bold;
+                color: #3589f7;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .hidden-items:not(:empty) {
+        border: 1px solid #babfc7;
+        margin: 44px 0 0;
+    }
+
+    .ag-grid-body {
+        margin: 15px 0;
+
+        .ag-paging-row-summary-panel {
+            display: none;
+        }
+
+        #ag-4-start-page {
+            display: none;
+        }
+    }
+}
+
+.select2-container *:focus {
+    outline: none;
+}
+
+@media (max-width: 930px) {
+    .events {
+        .search-body {
+            .buttons {
+                margin-top: 15px;
+            }
+        }
+    }
+}

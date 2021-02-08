@@ -1,0 +1,130 @@
+header {
+    .navbar {
+        padding: 25px 0 0 0;
+        border-color: #ccc;
+        -webkit-transition: all 0.6s ease;
+        -moz-transition: all 0.6s ease;
+        -o-transition: all 0.6s ease;
+        transition: all 0.6s ease;
+
+        .navbar-brand {
+            margin-right: 20px;
+            margin-left: 50px;
+            margin-top: -20px;
+            width: 185px;
+            height: auto;
+        }
+
+        .navbar-left {
+            li {
+                margin: 0 5px;
+            }
+        }
+
+        .navbar-nav {
+            a {
+                font-family: sans-serif;
+                font-size: 1.6rem;
+            }
+        }
+
+        .navbar-right {
+            margin-right: 50px;
+
+            li {
+                margin-left: 10px;
+            }
+
+            .lang-li {
+                margin-left: 20px;
+
+                div:hover {
+                    color: #fff;
+                    border-color: #ff0000 !important;
+                    background-color: #ff0000;
+                    cursor: pointer;
+                }
+            }
+
+            a {
+                padding: 10px 0;
+            }
+
+            .login {
+                div:hover {
+                    color: #fff;
+                    border-color: #337ab7 !important;
+                    background-color: #337ab7;
+                    cursor: pointer;
+                }
+            }
+
+            div {
+                padding: 0 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        .navbar {
+            .navbar-right {
+                div {
+                    padding: 0;
+                }
+
+                li {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:768px) {
+    header {
+        .navbar {
+            .navbar-right {
+                div {
+                    border: 1px solid #999;
+                    padding: 5px 10px;
+                }
+            }
+        }
+
+        .trans-navbar {
+            background-color: transparent;
+            border-color: #848484;
+
+            .navbar-nav > li > a {
+                color: #fff;
+            }
+
+            .navbar-nav > li > a:hover {
+                color: #aaa;
+            }
+
+            .navbar-right {
+                div {
+                    border: 1px solid #fff !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 921px) {
+    header {
+        .navbar {
+            .navbar-brand {
+                margin-left: 10px;
+            }
+
+            .navbar-right {
+                margin-right: 10px;
+            }
+        }
+    }
+}

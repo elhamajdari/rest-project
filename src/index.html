@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Ticket master - Search events">
+        <link rel="icon" type="image/x-icon" href="../images/favicon/favicon.ico">
+        <title>Ticket Master</title>
+
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <!-- Header Section -->
+            <section id="home-header" class="row header"></section>
+
+            <!-- Banner Section -->
+            <section id="home-banner" class="row banner"></section>
+
+            <!-- Events Section -->
+            <section id="home-events" class="row events">
+                <div class="alert alert-danger"></div>
+
+                <fieldset>
+                    <legend>Find Your Dream Events</legend>
+
+                    <div class="search-body">
+                        <form id="search-form">
+                            <div class="row">
+                                <div class="form-group col-md-4">
+                                    <input class="form-control search-field" name="id" id="event-id" placeholder="Event ID">
+                                </div>
+
+                                <div class="form-group col-md-4">
+                                     <input class="form-control search-field" name="keyword" id="keyword" placeholder="Keyword">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <select class='search-field' id="source" name="source">
+                                        <option value="">None</option>
+                                        <option value="ticketmaster">Ticket Master</option>
+                                        <option value="universe">Universe</option>
+                                        <option value="frontgate">Front Gate</option>
+                                        <option value="tmr">TMR</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row buttons">
+                                <button type="submit" class="search-btn">Search</button>
+                                <button class="clear-btn" id="clear-search-form">Clear Form</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="removed-panel">
+                        <div class="hidden-items"></div>
+                    </div>
+
+                    <div class="ag-grid-body">
+                        <div id="grid-content" style="height: 500px" class="ag-theme-alpine"></div>
+                    </div>
+                </fieldset>
+            </section>
+
+            <!-- Footer Section -->
+            <section id="home-footer" class="row footer"></section>
+        </div>
+
+        <script src="../node_modules/ag-grid-community/dist/ag-grid-community.min.js"></script>
+        <script type="module" src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+body {
+    a:hover, a:focus {
+        text-decoration: none;
+    }
+}
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~select2/dist/css/select2.min.css";
+@import "header";
+@import "banner";
+@import "events";
+@import "footer";
