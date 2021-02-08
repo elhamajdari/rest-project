@@ -35,6 +35,7 @@ Installation
 4- Open a terminal and run:
 ```
 $ cd <project-root>
+$ npm install
 $ npm run build
 $ sudo npm install http-server -g
 ```
